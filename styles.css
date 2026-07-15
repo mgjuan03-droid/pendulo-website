@@ -1,0 +1,266 @@
+:root {
+  --chalk: #FAFAFA;
+  --race-day: #ECFF45;
+  --tunnel-vision: #131313;
+  --military-green: #24301C;
+  --electric-lime: #E2FFAB;
+  --graphite: #D7D7D7;
+
+  --font-display: 'Unbounded', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--tunnel-vision);
+  color: var(--chalk);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Nav ---------- */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.75rem clamp(1.25rem, 5vw, 3.5rem);
+}
+
+.site-nav .wordmark {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  letter-spacing: 0.02em;
+}
+
+.site-nav .links {
+  display: flex;
+  gap: clamp(1rem, 3vw, 2rem);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.site-nav .links a {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav .links a:hover,
+.site-nav .links a.active {
+  color: var(--race-day);
+  border-color: var(--race-day);
+}
+
+/* ---------- Coming soon page ---------- */
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+  gap: 1.75rem;
+}
+
+.hero .eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--race-day);
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(3rem, 12vw, 8rem);
+  line-height: 0.95;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.hero .tagline {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2.2vw, 1.35rem);
+  color: var(--graphite);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero .tagline span {
+  color: var(--electric-lime);
+}
+
+.hero .sub {
+  max-width: 34rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--graphite);
+}
+
+.pulse-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.pulse-dots span {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--race-day);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.pulse-dots span:nth-child(2) { animation-delay: 0.2s; }
+.pulse-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulse {
+  0%, 80%, 100% { opacity: 0.25; transform: scale(0.85); }
+  40% { opacity: 1; transform: scale(1); }
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1.5rem 2.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--graphite);
+}
+
+/* ---------- Who We Are page ---------- */
+
+.page {
+  flex: 1;
+  padding: 1rem clamp(1.25rem, 6vw, 6rem) 5rem;
+}
+
+.page-header {
+  padding: 2.5rem 0 3rem;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.12);
+  margin-bottom: 3rem;
+}
+
+.page-header .eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--race-day);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.page-header h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.25rem, 7vw, 4.5rem);
+  line-height: 1;
+  margin: 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3rem;
+  max-width: 46rem;
+}
+
+.content-grid p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--graphite);
+  margin: 0 0 1.1rem;
+}
+
+.content-grid h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  color: var(--chalk);
+  margin: 0 0 1.25rem;
+}
+
+.section {
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.section:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.station-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.75rem 2rem;
+}
+
+.station-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.08);
+  font-size: 0.95rem;
+  color: var(--chalk);
+}
+
+.station-list li .num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--race-day);
+  min-width: 1.6rem;
+}
+
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pillars span {
+  border: 1px solid rgba(250, 250, 250, 0.25);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--electric-lime);
+}
+
+.callout {
+  background: var(--military-green);
+  border-radius: 1rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  margin-top: 3rem;
+}
+
+.callout p {
+  color: var(--chalk);
+  margin: 0;
+}
