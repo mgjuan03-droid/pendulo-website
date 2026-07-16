@@ -74,7 +74,7 @@
   --font-body: 'Obviously Wide', 'Helvetica Neue', Arial, sans-serif;
 
   --container: 1320px;
-  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --gutter: 32px;
 
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
