@@ -683,8 +683,8 @@ p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(19,19,19,0.55) 0%, rgba(19,19,19,0.35) 32%, rgba(19,19,19,0.75) 78%, var(--tunnel-vision) 100%),
-    linear-gradient(90deg, rgba(19,19,19,0.55) 0%, rgba(19,19,19,0.1) 45%, rgba(19,19,19,0.55) 100%);
+    linear-gradient(180deg, rgba(19,19,19,0.32) 0%, rgba(19,19,19,0.14) 32%, rgba(19,19,19,0.5) 78%, var(--tunnel-vision) 100%),
+    linear-gradient(90deg, rgba(19,19,19,0.32) 0%, rgba(19,19,19,0.05) 45%, rgba(19,19,19,0.32) 100%);
 }
 
 .hero-glow {
@@ -709,6 +709,7 @@ p {
 .hero-title {
   font-size: clamp(3.75rem, 13vw, 10.5rem);
   color: var(--chalk);
+  text-shadow: 0 4px 40px rgba(0,0,0,0.45);
 }
 
 .hero-tagline {
