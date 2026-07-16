@@ -270,18 +270,18 @@ p {
 .site-nav .wordmark {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: 0.01em;
+  gap: 0.5rem;
   white-space: nowrap;
 }
 
 .site-nav .wordmark .mark {
-  width: 26px;
-  height: 8px;
-  color: var(--race-day);
+  width: 24px;
+  height: auto;
+}
+
+.site-nav .wordmark .wordmark-img {
+  height: 15px;
+  width: auto;
 }
 
 .site-nav .nav-links {
@@ -388,16 +388,14 @@ p {
 }
 
 .footer-brand .wordmark {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.6rem;
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 0.85rem;
+  gap: 0.6rem;
+  margin-bottom: 1.1rem;
 }
 
-.footer-brand .mark { width: 34px; height: 10px; color: var(--race-day); }
+.footer-brand .mark { width: 32px; height: auto; }
+.footer-brand .wordmark-img { height: 21px; width: auto; }
 
 .footer-brand p {
   max-width: 22rem;
@@ -531,12 +529,17 @@ p {
   text-align: center;
 }
 
+.section-head.center .eyebrow { justify-content: center; }
+
 .section-head h1, .section-head h2, .section-head h3 {
   margin-top: 0.9rem;
   margin-bottom: 1.25rem;
 }
 
 .section-head .lede { margin-inline: auto; }
+
+.pillars.center, .hero-actions.center { justify-content: center; }
+.pillars-spaced { margin-top: 2.5rem; }
 
 .grid-2 {
   display: grid;
@@ -666,6 +669,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 30% 22%;
   animation: hero-zoom 18s var(--ease-soft) forwards;
 }
 
@@ -793,22 +797,6 @@ p {
 .intro-grid .section-head { margin-bottom: 0; flex: 2 1 26rem; max-width: 46rem; }
 .intro-grid .lede { flex: 1 1 18rem; max-width: 24rem; padding-bottom: 0.3rem; }
 
-.teaser-grid {
-  margin-top: clamp(3rem, 7vw, 5rem);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, minmax(180px, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
-}
-
-.teaser-tall { grid-row: 1 / 3; grid-column: 1; height: 100%; }
-.teaser-wide { grid-column: 2; height: 100%; }
-
-@media (max-width: 780px) {
-  .teaser-grid { grid-template-columns: 1fr; grid-template-rows: none; }
-  .teaser-tall, .teaser-wide { grid-column: 1; height: 320px; }
-}
-
 .media-frame { height: 100%; min-height: 220px; }
 
 /* Stat row */
@@ -836,35 +824,6 @@ p {
 .cta-band-inner .hero-actions { justify-content: center; }
 
 .cta-band-inner .eyebrow { justify-content: center; margin-bottom: 0.5rem; }
-
-/* ==========================================================================
-   Page hero (inner pages)
-   ========================================================================== */
-
-.page-hero {
-  position: relative;
-  min-height: 68vh;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-}
-
-.page-hero-content {
-  position: relative;
-  z-index: 1;
-  padding-top: 9rem;
-  padding-bottom: clamp(3rem, 7vw, 5rem);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.25rem;
-}
-
-.page-hero-title {
-  font-size: clamp(2.5rem, 6vw, 4.75rem);
-  color: var(--chalk);
-  max-width: 30ch;
-}
 
 /* ==========================================================================
    Split layout (media + copy)
