@@ -1,33 +1,175 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Péndulo — Próximamente</title>
-<meta name="description" content="Péndulo Hyrox Club. Built on momentum. Powered by community. Próximamente en Guatemala.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<title>Péndulo — Opening September 2026</title>
+<meta name="description" content="Péndulo is a private training club for Hyrox athletes and hybrid performers in Guatemala City. Built on momentum. Powered by community. Opening September 2026.">
+<meta property="og:title" content="Péndulo — Opening September 2026">
+<meta property="og:description" content="A private training club for Hyrox athletes and hybrid performers. Built on momentum. Powered by community.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/img/floor-sled-lane.webp">
+<meta name="theme-color" content="#131313">
+<link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/img/favicon-512.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 
-<nav class="site-nav">
-  <a class="wordmark" href="/">PÉNDULO</a>
-  <div class="links">
-    <a href="/who-we-are">Who We Are</a>
-  </div>
-</nav>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Primary">
+    <a class="wordmark" href="/">
+      <svg class="mark" viewBox="0 0 240 60" fill="none" aria-hidden="true"><defs><filter id="pendulo-goo"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10" result="goo"/></filter></defs><circle cx="14" cy="30" r="5" fill="currentColor"/><circle cx="35" cy="30" r="8.5" fill="currentColor"/><g filter="url(#pendulo-goo)"><circle cx="66" cy="30" r="13" fill="currentColor"/><circle cx="96" cy="30" r="18" fill="currentColor"/><circle cx="136" cy="30" r="24" fill="currentColor"/></g></svg>
+      PÉNDULO
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+    <div class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="/why-us">Why Us</a>
+      <a href="/plans">Plans</a>
+      <a href="/races">Races</a>
+    </div>
+    <a class="nav-cta" href="/plans">Join the Club</a>
+  </nav>
+</header>
 
-<main class="hero">
-  <span class="eyebrow">Péndulo Hyrox Club · Guatemala</span>
-  <h1>COMING<br>SOON</h1>
-  <p class="tagline">Built on momentum. <span>Powered by community.</span></p>
-  <p class="sub">Un piso de entrenamiento diseñado exclusivamente para Hyrox. Muy pronto abrimos nuestras puertas en Décima Plaza.</p>
-  <div class="pulse-dots"><span></span><span></span><span></span></div>
+<main>
+
+  <section class="hero" data-cursor-glow>
+    <div class="hero-media">
+      <img src="/assets/img/floor-sled-lane.webp" alt="Péndulo training floor with sled lane and racks" loading="eager">
+      <div class="hero-scrim"></div>
+      <div class="hero-glow"></div>
+    </div>
+
+    <div class="hero-content container">
+      <span class="eyebrow" data-reveal>Péndulo Hyrox Club · Guatemala City</span>
+      <h1 class="hero-title" data-reveal data-reveal-delay="1">COMING<br>SOON</h1>
+      <p class="hero-tagline" data-reveal data-reveal-delay="2">Built on momentum. <span class="italic-accent">Powered by community.</span></p>
+
+      <div class="hero-date" data-reveal data-reveal-delay="3">
+        <span class="hero-date-label">Opening</span>
+        <span class="hero-date-value">September 2026</span>
+      </div>
+
+      <div class="hero-actions" data-reveal data-reveal-delay="4">
+        <a href="/why-us" class="btn btn-primary">Discover the Club <span class="btn-arrow">→</span></a>
+        <a href="https://instagram.com/pendulo_gt" target="_blank" rel="noopener" class="btn btn-outline">Follow the Build</a>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Find your rhythm</span>
+      <span>Train the body. Move the soul.</span>
+      <span>Strength found in rhythm</span>
+      <span>Built on momentum, powered by community</span>
+      <span>Find your rhythm</span>
+      <span>Train the body. Move the soul.</span>
+      <span>Strength found in rhythm</span>
+      <span>Built on momentum, powered by community</span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">One discipline. One floor.</span>
+          <h2 class="display-2">One discipline. <span class="italic-accent">No compromise.</span></h2>
+        </div>
+        <p class="lede" data-reveal data-reveal-delay="1">No dilution, no compromise. Every rack, lane and station at Péndulo exists to prepare you for race day — and for the community that trains alongside you, every day in between.</p>
+      </div>
+
+      <div class="teaser-grid">
+        <div class="media-frame teaser-tall" data-reveal>
+          <img src="/assets/img/floor-airbikes.webp" alt="Péndulo air bike row beneath the brand mark wall" loading="lazy">
+        </div>
+        <div class="media-frame teaser-wide" data-reveal data-reveal-delay="1">
+          <img src="/assets/img/floor-weights.webp" alt="Free weight and dumbbell area at Péndulo" loading="lazy">
+        </div>
+        <div class="media-frame teaser-wide" data-reveal data-reveal-delay="2">
+          <img src="/assets/img/floor-reception.webp" alt="Péndulo Fitness Club reception" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-military">
+    <div class="container stat-row">
+      <div class="stat" data-reveal>
+        <span class="num" data-count-to="350">0</span>
+        <span class="label">Max members</span>
+      </div>
+      <div class="stat" data-reveal data-reveal-delay="1">
+        <span class="num">01</span>
+        <span class="label">Discipline · Hyrox</span>
+      </div>
+      <div class="stat" data-reveal data-reveal-delay="2">
+        <span class="num">09.26</span>
+        <span class="label">Opening — Sep 2026</span>
+      </div>
+      <div class="stat" data-reveal data-reveal-delay="3">
+        <span class="num">GT</span>
+        <span class="label">Décima Plaza, Guatemala</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark cta-band">
+    <div class="container cta-band-inner" data-reveal>
+      <h2 class="display-2">The doors open soon.<br><span class="italic-accent">The club starts now.</span></h2>
+      <div class="hero-actions">
+        <a href="/plans" class="btn btn-primary">See Membership Plans <span class="btn-arrow">→</span></a>
+        <a href="/races" class="btn btn-outline">Explore Race Calendar</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer class="site-footer">Jotas Holding, S.A. — Péndulo</footer>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="wordmark" href="/">
+          <svg class="mark" viewBox="0 0 240 60" fill="none" aria-hidden="true"><circle cx="14" cy="30" r="5" fill="currentColor"/><circle cx="35" cy="30" r="8.5" fill="currentColor"/><g filter="url(#pendulo-goo)"><circle cx="66" cy="30" r="13" fill="currentColor"/><circle cx="96" cy="30" r="18" fill="currentColor"/><circle cx="136" cy="30" r="24" fill="currentColor"/></g></svg>
+          PÉNDULO
+        </a>
+        <p>A private training club for Hyrox athletes and hybrid performers. Built on momentum. Powered by community.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Club</h4>
+          <a href="/why-us">Why Us</a>
+          <a href="/plans">Plans</a>
+          <a href="/races">Races</a>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <span>Décima Plaza</span>
+          <span>Guatemala City</span>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://instagram.com/pendulo_gt" target="_blank" rel="noopener">@pendulo_gt</a>
+          <a href="mailto:juan@pendulo.com">juan@pendulo.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jotas Holding, S.A. — Péndulo</span>
+      <span>Opening September 2026</span>
+    </div>
+  </div>
+</footer>
 
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

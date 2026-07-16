@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none" aria-hidden="true">
+  <defs>
+    <filter id="pendulo-goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+      <feColorMatrix in="blur" mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10"
+        result="goo" />
+    </filter>
+  </defs>
+  <circle cx="14" cy="30" r="5" fill="currentColor" />
+  <circle cx="35" cy="30" r="8.5" fill="currentColor" />
+  <g filter="url(#pendulo-goo)">
+    <circle cx="66" cy="30" r="13" fill="currentColor" />
+    <circle cx="96" cy="30" r="18" fill="currentColor" />
+    <circle cx="136" cy="30" r="24" fill="currentColor" />
+  </g>
+</svg>

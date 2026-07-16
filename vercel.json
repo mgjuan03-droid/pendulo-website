@@ -1,4 +1,7 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/who-we-are", "destination": "/why-us", "permanent": true }
+  ]
 }
