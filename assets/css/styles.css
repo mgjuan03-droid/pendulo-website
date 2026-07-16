@@ -127,6 +127,7 @@ h1, h2, h3, h4 {
   line-height: 0.98;
   margin: 0;
   letter-spacing: -0.01em;
+  overflow-wrap: break-word;
 }
 
 .eyebrow {
@@ -543,24 +544,24 @@ p {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.5rem, 4vw, 3rem);
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(1.25rem, 3vw, 2rem);
 }
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(1.25rem, 3vw, 2rem);
 }
 
 @media (max-width: 980px) {
-  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 640px) {
@@ -803,12 +804,12 @@ p {
 
 .stat-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
 }
 
 @media (max-width: 780px) {
-  .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .stat-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* CTA band */
@@ -879,7 +880,7 @@ p {
   margin-bottom: 1.25rem;
 }
 
-.card h3 { margin-bottom: 0.6rem; color: var(--chalk); }
+.card h3 { margin-bottom: 0.6rem; color: var(--chalk); font-size: clamp(1.3rem, 2.2vw, 1.65rem); hyphens: auto; }
 .card p { margin-bottom: 0; font-size: 0.98rem; }
 
 /* Station list (Hyrox explainer) */
@@ -936,13 +937,13 @@ p {
 
 .plans-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
   align-items: stretch;
 }
 
 @media (max-width: 1080px) {
-  .plans-grid { grid-template-columns: repeat(2, 1fr); }
+  .plans-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 620px) {
@@ -1025,7 +1026,7 @@ p {
 }
 
 .plan-price .amount {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
@@ -1107,12 +1108,12 @@ p {
 
 .races-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
 @media (max-width: 980px) {
-  .races-grid { grid-template-columns: repeat(2, 1fr); }
+  .races-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 620px) {
