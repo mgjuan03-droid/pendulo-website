@@ -1269,3 +1269,69 @@ p {
   color: var(--race-day);
   margin-top: 0.3rem;
 }
+
+/* ==========================================================================
+   Gear
+   ========================================================================== */
+
+.split-media.is-duo {
+  aspect-ratio: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  border-radius: 0;
+  overflow: visible;
+}
+
+.split-media.is-duo .media-frame {
+  aspect-ratio: 3 / 4;
+  border-radius: 1.25rem;
+}
+
+.gear-availability {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 999px;
+  background: rgba(19, 19, 19, 0.3);
+  margin-top: 0.4rem;
+}
+
+.gear-availability-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.gear-availability-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--race-day);
+  letter-spacing: 0.01em;
+}
+
+.gear-detail-grid .media-frame {
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1.25rem;
+}
+
+.gear-detail-grid .card-num {
+  display: none;
+}
+
+.gear-detail-card h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--chalk);
+  margin-bottom: 0.35rem;
+}
+
+.gear-detail-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
