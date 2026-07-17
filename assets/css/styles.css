@@ -372,7 +372,22 @@ p {
   }
   .site-nav .nav-links a { font-size: 1.4rem; }
   .nav-open .nav-links { opacity: 1; pointer-events: all; }
-  .site-nav .nav-cta { display: none; }
+  .site-nav .nav-cta {
+    display: inline-flex;
+    position: fixed;
+    left: 50%;
+    bottom: 3.5rem;
+    z-index: 1;
+    transform: translateX(-50%) translateY(0.5rem);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s var(--ease-soft), transform 0.35s var(--ease-soft);
+  }
+  .nav-open .nav-cta {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(-50%) translateY(0);
+  }
   .nav-toggle { display: flex; }
 }
 
